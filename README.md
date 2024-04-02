@@ -3,5 +3,5 @@ Datasets required: The full gene list of 129 genes used for this project is uplo
 
 The data_handling.ipynb file filters the DECIPHER dataset using the gene list and performs various statistical tests. The sole output of this script is a filtered dataset csv.
 
-The clustering_gene_groups.ipynb file uses the filtered dataset csv to group patients by gene and perform hierarchical clustering. In this case, two of the 'significant' clusters (identified using Welch's t-test) were then taken forward for a Fisher's exact test to identify any phenotypic differences between the two clusters - these are visualised using a heatmap.
+The clustering_gene_groups.ipynb file uses the filtered dataset csv to group patients by gene and perform hierarchical clustering. 
 
