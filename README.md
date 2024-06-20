@@ -1,7 +1,5 @@
 # HPO Analysis (May 2023 - May 2024)
-Datasets required: The full gene list of 129 genes used for this project is uploaded here as gene_list.csv. Information about each gene, including uniprot ID, protein description, length and GO terms, was gathered from uniprot.org. The DECIPHER dataset has not been uploaded here as it requires an access agreement.
+Datasets required: The gene list of 129 genes used for this project is saved as gene_list.csv. Information about each gene, including uniprot ID, protein description, length and GO terms, was gathered from uniprot.org. The DECIPHER dataset has not been uploaded as it requires an access agreement.
 
-The data_handling.ipynb file filters the DECIPHER dataset using the gene list and performs various statistical tests. The sole output of this script is a filtered dataset csv.
-
-The clustering_gene_groups.ipynb file uses the filtered dataset csv to group patients by gene and perform hierarchical clustering. 
+The DECIPHERDataHandling.ipynb file filters the DECIPHER dataset using the gene list and performs various statistical tests: the output of this script is a filtered csv. The DECIPHERClusteringPatients.ipynb file perfoms hierarchical clustering on the filtered dataset, while the DECIPHERClusteringGeneGroups.ipynb file groups patients by gene and performs hierarchical clustering.
 
