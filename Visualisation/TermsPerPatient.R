@@ -1,8 +1,5 @@
-library(ggplot2)
 library(tidyverse)
-library(dplyr)
 library(extrafont)
-setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub/FinalDraft/GitHub')
 
 # Set colours
 revcolour <- '#f1f2f2'
