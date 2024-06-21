@@ -2,8 +2,8 @@ def get_HPO_id(HPOTerm):
     '''
     Gets HPO ID from an HPO term
     '''
-    term = Ontology.get_hpo_object(HPOTerm)
-    return str(term)[:10] if term else None
+    HPOID = Ontology.get_hpo_object(HPOTerm)
+    return str(HPOID)[:10] if HPOID else None
 
 
 def get_HPO_term(HPOID):
