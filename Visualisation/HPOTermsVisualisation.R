@@ -3,7 +3,6 @@ library(extrafont)
 library(ggrepel)
 
 # Get significant HPO terms
-setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub/FinalDraft/')
 HPOSig <- read.csv('./DataHandlingOutput/genelistOtherHPOSignificant.csv', row.names=1) 
 
 # Check for obsolete terms
