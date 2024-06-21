@@ -1,6 +1,4 @@
 library(tidyverse)
-library(ggplot2)
-library(dplyr)
 library(extrafont)
 library(sysfonts)
 library(ggrepel)
