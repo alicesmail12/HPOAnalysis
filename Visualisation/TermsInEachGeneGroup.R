@@ -6,7 +6,6 @@ library(ggrepel)
 library(ggpubr)
 library(RColorBrewer)
 library(forcats)
-setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub')
 
 # Get phenotype binary matrix for each gene group
 phenotypes <- read.csv('decipherPhenotypeMatrix.csv', header=FALSE)
