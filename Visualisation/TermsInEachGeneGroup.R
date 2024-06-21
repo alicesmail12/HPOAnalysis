@@ -6,7 +6,6 @@ library(ggrepel)
 library(ggpubr)
 library(RColorBrewer)
 library(forcats)
-
 setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub')
 
 # Get phenotype binary matrix for each gene group
@@ -27,11 +26,14 @@ geneOrder <- (phenotypes %>% arrange(TotalPatients))$gene
 
 # Make function to get frequency table
 phenotypeBarPlot <- function(term){
+  
+  # Reshape data
   df <- phenotypes %>% select('gene', term, 'TotalPatients') 
   df[term] <- as.numeric(unlist(df[term]))
   df$None <- unlist(df$TotalPatients - df[term])
   df <- df %>% pivot_longer(cols=c(term, 'None'))
   
+  # Plot
   ggplot(df, aes(x=factor(gene, levels=geneOrder), y=value, fill=forcats::fct_rev(name))) +
     geom_col(position="stack", colour='black', size=0.4, width=1) +
     coord_flip()+
