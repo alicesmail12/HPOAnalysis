@@ -5,7 +5,6 @@ library(ggrepel)
 library(ggpubr)
 library(RColorBrewer)
 library(forcats)
-setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub/')
 
 # Read csvs
 PatientClusterLabels <- read.csv('PatientClusterLabels.csv')
