@@ -57,6 +57,5 @@ limbs <- phenotypeBarPlot('Abnormality of limbs')+labs(title='Abnormality of lim
 digestiveSystem <- phenotypeBarPlot('Abnormality of the digestive system')+labs(title='Abnormality of the digestive system')
 
 # Plot altogether
-plot<-ggarrange(nervousSystem, headNeck, integument, growth, limbs, digestiveSystem, ncol=3, nrow=2)+theme(plot.margin=margin(0.1,0.1,0.1,0.1, "cm")) 
-ggsave(file="/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub/FinalDraft/GitHub/Figures/TermsInEachGeneGroup.png", plot=plot, width=12, height=8)
+plot<-ggarrange(nervousSystem, headNeck, integument, growth, limbs, digestiveSystem, ncol=3, nrow=2)+theme(plot.margin=margin(0.1,0.1,0.1,0.1, "cm"))
 
