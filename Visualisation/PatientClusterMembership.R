@@ -1,11 +1,5 @@
 library(tidyverse)
 library(extrafont)
-library(sysfonts)
-library(ggrepel)
-library(ggpubr)
-library(RColorBrewer)
-library(forcats)
-setwd('/Users/alicesmail/Desktop/Modules/Chromatinopathy_GitHub/FinalDraft/GitHub/ClusteringPatientsOutput')
 
 # Read csv
 PatientClusterLabels <- read.csv('PatientClusterLabels.csv')
