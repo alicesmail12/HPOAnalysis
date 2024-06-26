@@ -36,4 +36,3 @@ plot <- ggplot(PatientClusterSum, aes(x=reorder(gene, -NumberofPatients), y=n, f
         panel.border=element_rect(size=1),
         text=element_text(size=12, family="Franklin Gothic Book"),
         axis.text.x=element_text(angle=90, vjust=0.5, hjust=1)) 
-plot
