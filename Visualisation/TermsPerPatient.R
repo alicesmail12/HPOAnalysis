@@ -78,7 +78,7 @@ HPOPerPatient1 <- ggplot(HPOBinsReshape, aes(x=hpo_freq, y=percent, fill=group))
                     labels=c("PcG/TrxG (n=462)", "Rest of DECIPHER (n=5070)"), name="Group")
 
 # Save
-ggsave(file="TopLevelHPOTermsPerPatient.png", plot=HPOPerPatient1, width=14, height=4)
+ggsave(file="./Figures/TopLevelHPOTermsPerPatient.png", plot=HPOPerPatient1, width=14, height=4)
 
 # Number of unpropagated terms per patient #####################################
 HPOBins <- read.csv("./DataHandlingOutput/histogram.csv")
@@ -115,4 +115,4 @@ HPOPerPatient2 <- ggplot(HPOBinsReshape, aes(x=bin, y=percent, fill=group))+
                     labels=c("PcG/TrxG (n=462)", "Rest of DECIPHER (n=5070)"), name="Group")
 
 # Save
-ggsave(file="HPOTermsPerPatient.png", plot=HPOPerPatient2, width=14, height=4)
+ggsave(file="./Figures/HPOTermsPerPatient.png", plot=HPOPerPatient2, width=14, height=4)
